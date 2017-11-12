@@ -8,7 +8,19 @@ int main()
 {
     cout<< "don't worry, be happy" <<endl; //namespace
     std::cout <<"eunseo is pretty"<<std::endl;
-    std::cout <<"C++ is powerprogramming";
     
-    return 0;
+    int length;
+    int width;
+    
+    cout << "Enter the length: ";
+    cin >> length;
+    cout << endl;
+    
+    cout << "Enter the width: ";
+    cin >> width;
+    cout << endl;
+    
+    cout << "The area is: ";
+    cout << length * width <<endl;
+
 }
