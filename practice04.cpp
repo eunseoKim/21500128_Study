@@ -50,3 +50,27 @@ void Human::How_old_are_you(){
     cout << GetName() << ":" << "I am" << GetAge() << "."  <<endl;
 }
 
+Human::Human()
+{
+    age = -1;
+    height = 0.0;
+    name = "";
+}
+
+Human::Human(int Age, double Height char *Name)
+{
+    age = Age
+    height = Height
+    name = Name
+}
+
+void human::Aging()
+{
+    age++
+}
+
+void human::Growing()
+{
+    height += 0.5;
+}
+
