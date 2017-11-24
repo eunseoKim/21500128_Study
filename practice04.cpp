@@ -57,11 +57,11 @@ Human::Human()
     name = "";
 }
 
-Human::Human(int Age, double Height char *Name)
+Human::Human(int Age, double Height, char *Name)
 {
-    age = Age
-    height = Height
-    name = Name
+    age = Age;
+    height = Height;
+    name = Name;
 }
 
 void human::Aging()

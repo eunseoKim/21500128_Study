@@ -1,11 +1,11 @@
-all: practice03
-	g++ -L. practice03.o -o practice03
+all: practice04
+	g++ -L. practice04.o -o practice04
 	
 SRC_FILES = $(wildcard dir/*.cpp)
 
-practice03: practice03.cpp
-	g++ -std=c++11 -c practice03.cpp -o practice03.o
+practice04: practice04.cpp
+	g++ -std=c++11 -c practice04.cpp -o practice04.o
 	
 clean:
 	rm *.o
-	rm practice03
+	rm practice04
