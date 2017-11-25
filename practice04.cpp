@@ -8,7 +8,7 @@ private:
     char* name;
 public:
     Human();
-    Human(int, double,char*);
+    Human(int, double, char*);
     
     void AskName(Human);
     void AskAge(Human);
@@ -57,19 +57,19 @@ Human::Human()
     name = "";
 }
 
-Human::Human(int Age, double Height, char *Name)
+Human::Human(int Age, double Height, char* Name)
 {
     age = Age;
     height = Height;
     name = Name;
 }
 
-void human::Aging()
+void Human::Aging()
 {
-    age++
+    age++;
 }
 
-void human::Growing()
+void Human::Growing()
 {
     height += 0.5;
 }
