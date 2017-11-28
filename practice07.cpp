@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+#include <string.h> //because of strlen & strcpy
 
 using namespace std;
 
@@ -50,7 +50,7 @@ int main(){
     record myRecord("Kim","6565");
     record hisRecord(myRecord);
     myRecord.modifyTel("5454");
-    myRecord.print();
     hisRecord.print();
+    myRecord.print();
     return 0;
 }
