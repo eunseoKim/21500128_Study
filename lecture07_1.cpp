@@ -1,11 +1,11 @@
 #include <iostream>
 namespace IntSpace{
-    int data;
+    int data;//same variable name is allowed in different namespaces
     void add(int n){ data += n;}
     void print(){ std::cout << data << std::endl;}
 }
 namespace DoubleSpace{
-    double data;
+    double data;//same variable name is allowed in different namespace
     void add(double n){data +=n;}
     void print(){ std::cout << data << std::endl;}
 }
