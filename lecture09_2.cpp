@@ -1,6 +1,6 @@
 class ChangePocketClass
 {
-    public: 
+    public:
         ChangePocketClass():quarters(0),dimes(0) 
         {}
         ChangePocketClass(int q, int d):
@@ -23,6 +23,21 @@ class ChangePocketClass
         {
             return dimes;
         }
+        
+        //copy constructor-called when a copy of an object is needed
+        ChangePocketClass(const ChangePocketClass &copy)
+        {
+            quarters = copy.quarters;
+            dimes = copy.dimes;
+        }
+        
+        //Assignment operator-called when one object is assigned to another
+        void operator=(const ChangePocketClass rhs)
+        {
+            quarters = rhs.quarters;
+            dimes = rhs.dimes;
+        }
+        
         
     private:
         int quarters;
