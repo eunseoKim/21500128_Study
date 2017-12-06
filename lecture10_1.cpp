@@ -18,9 +18,9 @@ class Undergraduate : public Student{
 
 int main(){
     Person *p1 = new Person;
-    Student *p2 = new Person;//invalid conversion from ‘Person*’ to ‘Student*’ [-fpermissive]
-    Undergraduate *p3 = new Person;//invalid conversion from ‘Person*’ to ‘Undergraduate*’ [-fpermissive]
-
+    Student *p2 = new Student;
+    Undergraduate *p3 = new Undergraduate;
+    
     p1->Sleep();
     p2->Sleep();
     p3->Sleep();
