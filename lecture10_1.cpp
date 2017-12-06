@@ -18,12 +18,12 @@ class Undergraduate : public Student{
 
 int main(){
     Person *p1 = new Person;
-    Student *p2 = new Student;
-    Undergraduate *p3 = new Undergraduate;
+    Person *p2 = new Student;
+    Student *p3 = new Undergraduate;
     
     p1->Sleep();
     p2->Sleep();
-    p3->Sleep();
+    p3->Study();
     
     return 0;
 }
