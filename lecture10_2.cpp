@@ -10,7 +10,8 @@ class Parent{
 
 class Child: public Parent{
     public:
-    void print(){
+    void print(int i= 1){
+        for(int j =0; j < i; j++)
         cout << "I'm your son." << endl;
     }
 };
@@ -18,5 +19,6 @@ class Child: public Parent{
 int main(){
     Child child;
     child.print();
+    child.print(3);
     return 0;
 }
