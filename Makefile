@@ -1,11 +1,11 @@
-all: lecture10_3
-	g++ -L. lecture10_3.o -o lecture10_3
+all: lecture06_2
+	g++ -L. lecture06_2.o -o lecture06_2
 	
 SRC_FILES = $(wildcard dir/*.cpp)
 
-lecture10_3: lecture10_3.cpp
-	g++ -std=c++11 -c lecture10_3.cpp -o lecture10_3.o
+lecture06_2: lecture06_2.cpp
+	g++ -std=c++11 -c lecture06_2.cpp -o lecture06_2.o
 	
 clean:
 	rm *.o
-	rm lecture10_3
+	rm lecture06_2
