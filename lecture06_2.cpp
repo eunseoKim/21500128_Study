@@ -21,9 +21,13 @@ class BBB : public AAA
 };
 
 int main(void)
-{
-    BBB b;
-    b.fct();
+{//new delete
+    BBB* b = new BBB;
+    b -> fct();
     
+    AAA* a = b;
+    a->fct();
+    
+    delete b;
     return 0;
 }
